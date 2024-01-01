@@ -1,0 +1,6 @@
+{
+    "colors": {
+        "primary": "#aaaaaa"
+    },
+    "base_css": "p{color:red;}"
+}

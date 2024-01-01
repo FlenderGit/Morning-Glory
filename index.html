@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        window.css_config = {
+            colors: {
+                primary: "#1a202c",
+                secondary: "#2d3748",
+                tertiary: "#4a5568",
+            },
+            base_css: "a{color:#ddd;text-decoration:none;}",
+            fonts: [
+                //'Raleway',
+                "Kanit"
+            ],
+            plugins: [
+                "parallax"
+            ]
+        }
+    </script>
+
+    <script src="test.js"></script>
+
+    <style>
+        code:before{
+    content: counter(line);
+    margin-right: 10px;
+}
+pre{
+    counter-reset: line;
+}
+code{
+    counter-increment: line;
+}
+code:before{
+    -webkit-user-select: none;
+}
+
+
+    </style>
+
+</head>
+<body class="font-Kanit">
+
+    <div class="flex-col flex-center height-screen bg-primary">
+        <h1 class="color-lightblue text-title delay-35 transition hover:scale-105 hover:translate-x-2 tshadow-5-2-pink">Morning Glory</h1>
+        <span class="hover:color-random color-random text-primary">CSS's boring ?</span>
+        <p id="test" class="hover:bg-red-600 delay-100 transition-color bg-pink-800 br-2 m-y-1 p-1">By Flender</p>
+        <a href="#">Lien vers ma page</a>
+    </div>
+
+    <div class="flex-col flex-center height-screen bg-r-pink-500-to-lightblue-300">
+        
+        <div class="p-2 m-x-3 bg-lightblue flex-col flex-center-second br-2">
+            <h1 class="color-blue">Generate CSS dynamic using classes</h1>
+
+            <div class="p-1 flex-col g-1 bg-primary-900 width-full br-1">
+                <div class="flex-row g-1">
+                    <div class="bg-red-800 height-1 width-1 br-1"></div>
+                    <div class="bg-yellow-800 height-1 width-1 br-1"></div>
+                    <div class="bg-green-800 height-1 width-1 br-1"></div>
+                </div>
+                <hr>
+                <pre class="color-white-500">
+<code>&ltdiv class=<span class="color-red-900">"bg-green-800 p-1"</span>&gt</code>
+<code>  &ltp&gtHello World !&lt/p&gt</code>
+<code>&lt/div&gt</code></pre>
+            </div>
+
+        </div>
+        
+    </div>
+   
+
+    <div class="height-screen flex-col flex-center bg-pink-200 g-2 parallax">
+        <h1>Test des couleurs & box-shadow</h1>
+        <div class="flex-row g-2">
+            <div class="flex-col flex-center-second p-1 bg-lightblue br-1 shadow-xl scroll-slow scrolled parallax-speed--60">
+                <p>lightblue</p>
+            </div>
+            <div class="bg-lightblue-500 shadow-xl-inset transition-shadow delay-100 p-1 br-1 parallax-speed-10">
+                <p>lightblue-500</p>
+            </div>
+            <div class="bg-lightblue-300 shadow-xl p-1 br-1 parallax-speed-4">
+                <p>lightblue-300</p>
+            </div>
+        </div>
+    </div>
+
+        
+</body>
+</html>
